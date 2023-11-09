@@ -4,13 +4,18 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    Rigidbody _rigidbody = null;
     [SerializeField] PlayerControllerInput _input;
+
+    Rigidbody _rigidbody = null;
     
     Vector3 _playerMoveInput = Vector3.zero;
 
     [Header("Movement")]
     [SerializeField] float _movementMultiplier = 30.0f;
+    [SerializeField] float _rotationSpeedMultiplier = 180.0f;
+    [SerializeField] float _pitchSpeedMultiplier = 180.0f;
+
+
 
     private void Awake()
     {
@@ -19,12 +24,12 @@ public class PlayerController : MonoBehaviour
 
     private void FixedUpdate()
     {
+
         _playerMoveInput = GetMoveInput();
         PlayerMove();
 
         _rigidbody.AddRelativeForce(_playerMoveInput, ForceMode.Force);
     }
-
     private Vector3 GetMoveInput()
     {
         return new Vector3(_input.MoveInput.x, 0.0f, _input.MoveInput.y);

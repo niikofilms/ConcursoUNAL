@@ -8,6 +8,7 @@ public class PlayerControllerInput : MonoBehaviour
     public bool MoveIsPressed = false;
 
     public Vector2 LookInput { get; private set; } = Vector2.zero;
+    public bool InvertMouseY { get; private set; } = true; 
 
     InputSystem _input = null;
 
