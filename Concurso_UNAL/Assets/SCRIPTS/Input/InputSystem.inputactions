@@ -140,13 +140,22 @@
             "id": "69e925f8-4ead-480a-950a-86266540d73f",
             "actions": [
                 {
+                    "name": "Escape",
+                    "type": "Value",
+                    "id": "53c88183-2521-43ae-9858-d2885f48452d",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
                     "name": "Click",
                     "type": "PassThrough",
                     "id": "98fed76e-b829-40fa-976d-834490c25dae",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
-                    "initialStateCheck": false
+                    "initialStateCheck": true
                 },
                 {
                     "name": "Navigate",
@@ -170,6 +179,28 @@
             "bindings": [
                 {
                     "name": "",
+                    "id": "35bddfc6-6be3-47f9-8b1f-0508456a5bf7",
+                    "path": "<Keyboard>/escape",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Escape",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "1d3ebc90-61b2-414f-bf43-98da18645108",
+                    "path": "<Gamepad>/select",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Escape",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "5f27e1fa-12f7-4ff2-91a4-9c81ec4bcdfc",
                     "path": "<Mouse>/leftButton",
                     "interactions": "",
@@ -187,6 +218,17 @@
                     "processors": "",
                     "groups": "",
                     "action": "Click",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "18475e7f-2ee9-4477-b2af-41574d51d343",
+                    "path": "<Keyboard>/escape",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Cancel",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -264,17 +306,6 @@
                     "processors": "",
                     "groups": "",
                     "action": "Navigate",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "18475e7f-2ee9-4477-b2af-41574d51d343",
-                    "path": "<Keyboard>/escape",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Cancel",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

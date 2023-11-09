@@ -5,22 +5,13 @@ using UnityEngine.SceneManagement;
 
 public class CambiarNivel : MonoBehaviour
 {
-    public ControladorDePausa juegoPausado;
-
-    private void Start()
+    public void CambiarEscenaJuego(string juego)
     {
-        juegoPausado = GetComponent<ControladorDePausa>();
-    }
-
-    public void CambiarEscenaJuego (string juego)
-    {
-        juegoPausado.ResetScene();
         SceneManager.LoadScene(juego);
     }
 
-    public void CambiarEscenaMenu (string menuPrincipal)
+    public void CambiarEscenaMenu(string menuPrincipal)
     {
         SceneManager.LoadScene(menuPrincipal);
     }
-   
 }

@@ -37,12 +37,11 @@ public class PlayerControllerInput : MonoBehaviour
     private void SetMove(InputAction.CallbackContext ctx)
     {
         MoveInput = ctx.ReadValue<Vector2>();
-        MoveIsPressed = true;
+        MoveIsPressed = !(MoveInput == Vector2.zero);
     }
     private void SetLook(InputAction.CallbackContext ctx)
     {
         LookInput = ctx.ReadValue<Vector2>();
-        MoveIsPressed = false;
     }
 }
  
